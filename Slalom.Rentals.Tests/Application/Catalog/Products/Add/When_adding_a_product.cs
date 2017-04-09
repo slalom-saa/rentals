@@ -1,9 +1,9 @@
 using System;
-using Xunit;
 using Slalom.Rentals.Application.Catalog.Products.Add;
 using Slalom.Stacks.TestKit;
+using Xunit;
 
-namespace Slalom.Rentals.Tests
+namespace Slalom.Rentals.Tests.Application.Catalog.Products.Add
 {
     [TestSubject(typeof(AddProduct))]
     public class When_adding_a_product
@@ -23,14 +23,14 @@ namespace Slalom.Rentals.Tests
         }
 
         [Fact]
-        public void should_return_the_added_items_id()
+        public void should_raise_the_event()
         {
             // TODO: Implement test
             throw new NotImplementedException();
         }
 
         [Fact]
-        public void should_raise_the_event()
+        public void should_return_the_added_items_id()
         {
             // TODO: Implement test
             throw new NotImplementedException();
