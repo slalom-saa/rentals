@@ -8,8 +8,4 @@
     <PackageReference Include="Slalom.Stacks" Version="1.5.35" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Application\Integration\" />
-  </ItemGroup>
-
 </Project>
