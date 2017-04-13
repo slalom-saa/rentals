@@ -1,9 +1,6 @@
 ﻿using Slalom.Stacks.Validation;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Slalom.Rentals.Application.Catalog.Products.Add
+namespace Slalom.Rentals.Application.Products.Add
 {
     public class AddProductCommand
     {

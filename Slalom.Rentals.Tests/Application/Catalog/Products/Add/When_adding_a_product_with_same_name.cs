@@ -1,8 +1,8 @@
-﻿using Slalom.Rentals.Application.Catalog.Products.Add;
-using Slalom.Stacks.TestKit;
+﻿using Slalom.Stacks.TestKit;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Slalom.Rentals.Application.Products.Add;
 using Xunit;
 
 namespace Slalom.Rentals.Tests.Application.Catalog.Products.Add

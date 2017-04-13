@@ -1,10 +1,7 @@
 ﻿using Slalom.Stacks.Messaging.Validation;
 using Slalom.Stacks.Validation;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Slalom.Rentals.Application.Catalog.Products.Add.Rules
+namespace Slalom.Rentals.Application.Products.Add.Rules
 {
     /// <summary>
     /// Validates that a user is registered.
@@ -14,8 +11,11 @@ namespace Slalom.Rentals.Application.Catalog.Products.Add.Rules
         /// <inheritdoc />
         public override ValidationError Validate(AddProductCommand instance)
         {
-            // TODO: perform validation here
-            return new ValidationError("UserNotEmployee", "You must be an employee to add a product.");
+            if (!this.Request.User.IsInRole("Employee"))
+            {
+                return new ValidationError("UserNotEmployee", "You must be an employee to add a product.");
+            }
+            return null;
         }
     }
 }

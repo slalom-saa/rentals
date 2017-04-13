@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Slalom.Stacks.Web.AspNetCore" Version="1.5.14" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Slalom.Rentals\Slalom.Rentals.csproj" />
   </ItemGroup>
 
