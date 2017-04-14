@@ -1,9 +1,18 @@
 cd $PSScriptRoot
 
-cd ..
+if (!(Test-Path "$PSScriptRoot\Document.exe")) {
+    $url = "https://github.com/slalom-saa/stacks/raw/develop/assets/Document.exe"
+    $output = "$PSScriptRoot\Document.exe"
+    (New-Object System.Net.WebClient).DownloadFile($url, $output)
+}
+if (!(Test-Path "$PSScriptRoot\Microsoft.Build.dll")) {
+    $url = "https://github.com/slalom-saa/stacks/raw/develop/assets/Microsoft.Build.dll"
+    $output = "$PSScriptRoot\Microsoft.Build.dll"
+    (New-Object System.Net.WebClient).DownloadFile($url, $output)
+}
 
-foreach($item in Get-ChildItem -Filter '*.sln')
+foreach($item in Get-ChildItem -Path ".." -Filter '*.sln')
 {
-    . "C:\Source\Stacks\Documentation\src\Slalom.Stacks.Documentation.Word\bin\Debug\net461\win10-x64\Slalom.Stacks.Documentation.Word.exe" $item.FullName "it.docx"
+    . "$PSScriptRoot\Document.exe" $item.FullName "document.docx"
 }
 
