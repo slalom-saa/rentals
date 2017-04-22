@@ -1,4 +1,4 @@
-﻿using Slalom.Stacks.Messaging.Validation;
+﻿using Slalom.Stacks.Services.Validation;
 using Slalom.Stacks.Validation;
 
 namespace Slalom.Rentals.Application.Products.Add.Rules

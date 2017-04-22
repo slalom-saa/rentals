@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Slalom.Rentals.Application.Integration;
 using Slalom.Rentals.Domain.Products;
-using Slalom.Stacks.Messaging;
+using Slalom.Stacks.Services;
 
 namespace Slalom.Rentals.Application.Products.Add
 {

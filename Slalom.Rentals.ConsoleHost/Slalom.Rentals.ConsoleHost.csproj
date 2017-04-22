@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Slalom.Stacks.Web.AspNetCore" Version="1.5.14" />
+    <PackageReference Include="Slalom.Stacks.Web.AspNetCore" Version="1.6.10" />
   </ItemGroup>
 
   <ItemGroup>

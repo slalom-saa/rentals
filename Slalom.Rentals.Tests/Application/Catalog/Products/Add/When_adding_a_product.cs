@@ -1,7 +1,7 @@
 using System;
 using Slalom.Rentals.Application.Integration;
 using Slalom.Rentals.Application.Products.Add;
-using Slalom.Stacks.TestKit;
+using Slalom.Stacks.Tests;
 using Xunit;
 
 namespace Slalom.Rentals.Tests.Application.Catalog.Products.Add

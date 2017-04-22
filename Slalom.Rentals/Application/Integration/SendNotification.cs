@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Slalom.Stacks.Messaging;
+using Slalom.Stacks.Services.Messaging;
 
 namespace Slalom.Rentals.Application.Integration
 {
