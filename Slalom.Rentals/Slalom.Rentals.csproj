@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Slalom.Stacks" Version="1.6.7" />
+    <PackageReference Include="Slalom.Stacks" Version="1.7.14" />
   </ItemGroup>
 
 </Project>
