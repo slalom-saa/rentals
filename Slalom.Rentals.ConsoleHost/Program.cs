@@ -1,5 +1,4 @@
 ﻿using Slalom.Stacks;
-using Slalom.Stacks.Web.AspNetCore;
 
 namespace Slalom.Rentals.ConsoleHost
 {
