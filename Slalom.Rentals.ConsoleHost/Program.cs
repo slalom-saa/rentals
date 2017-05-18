@@ -1,6 +1,4 @@
-﻿using Slalom.Rentals.Application.Catalog;
-using Slalom.Stacks;
-using Slalom.Stacks.Web.AspNetCore;
+﻿using Slalom.Stacks;
 
 namespace Slalom.Rentals.ConsoleHost
 {
@@ -8,11 +6,6 @@ namespace Slalom.Rentals.ConsoleHost
     {
         private static void Main(string[] args)
         {
-            using (var stack = new Stack(typeof(AddProduct)))
-            {
-                stack.RunWebHost();
-            }
-
         }
     }
 }
